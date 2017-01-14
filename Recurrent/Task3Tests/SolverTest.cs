@@ -1,5 +1,4 @@
 ﻿using System;
-using System.CodeDom;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Task3;
 
@@ -23,13 +22,13 @@ namespace Task3Tests
         }
 
         [TestMethod]
-        public void Execute1digit()
+        public void Execute2digit()
         {
             Assert.AreEqual(10, Solver.Execute(1));
         }
 
         [TestMethod]
-        public void Execute2digit()
+        public void Execute4digit()
         {
             Assert.AreEqual(670, Solver.Execute(2));
         }
@@ -39,12 +38,29 @@ namespace Task3Tests
         {
             Assert.AreEqual(55252, Solver.Execute(3));
         }
+
         [TestMethod]
-        [Ignore()]
+        public void Execute8digit()
+        {
+            Assert.AreEqual(4816030, Solver.Execute(4));
+        }
+
+        [TestMethod]
         public void Execute10digit()
         {
-           //some non-recursive solution is probably needed
-            Assert.AreEqual(55252, Solver.Execute(10));
+            Assert.AreEqual(432457640, Solver.Execute(5));
+        }
+
+        [TestMethod]
+        public void Execute20digit()
+        {
+            Assert.AreEqual(3.0819189237419E+18, Solver.Execute(10), 0.0000000000001E+18);
+        }
+
+        [TestMethod]
+        public void Execute200digit()
+        {
+            Assert.AreEqual(9.81376265729964E+197, Solver.Execute(100), 0.00000000000001E+197);
         }
     }
 }
