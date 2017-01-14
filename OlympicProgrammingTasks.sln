@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recurrent", "Recurrent\Recurrent.csproj", "{BABEA8E9-3CB7-40E9-9827-7D57DC459867}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recurrent", "Recurrent", "{350C11D1-6EC7-4E00-9501-98B48FF9E16C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1", "Task1\Task1.csproj", "{38AA05A9-6330-481E-B7BE-848490B71016}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1", "Recurrent\Task1\Task1.csproj", "{38AA05A9-6330-481E-B7BE-848490B71016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1Tests", "Task1Tests\Task1Tests.csproj", "{EBC3118B-4F4B-4747-B984-328FF8553EE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1Tests", "Recurrent\Task1Tests\Task1Tests.csproj", "{EBC3118B-4F4B-4747-B984-328FF8553EE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BABEA8E9-3CB7-40E9-9827-7D57DC459867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BABEA8E9-3CB7-40E9-9827-7D57DC459867}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BABEA8E9-3CB7-40E9-9827-7D57DC459867}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BABEA8E9-3CB7-40E9-9827-7D57DC459867}.Release|Any CPU.Build.0 = Release|Any CPU
 		{38AA05A9-6330-481E-B7BE-848490B71016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{38AA05A9-6330-481E-B7BE-848490B71016}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38AA05A9-6330-481E-B7BE-848490B71016}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -30,5 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{38AA05A9-6330-481E-B7BE-848490B71016} = {350C11D1-6EC7-4E00-9501-98B48FF9E16C}
+		{EBC3118B-4F4B-4747-B984-328FF8553EE2} = {350C11D1-6EC7-4E00-9501-98B48FF9E16C}
 	EndGlobalSection
 EndGlobal
